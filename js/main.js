@@ -33,6 +33,10 @@ const pecas = {
   }
 }
 
+function trocaImg(cor){
+  document.querySelector('.robo').src = "img/Robotron 2000 - " + cor +".png";
+}
+
 controle.forEach( (elemento) => {
   elemento.addEventListener("click", (evento) => {
     manipulaDados(evento.target.dataset.controle, evento.target.parentNode);
@@ -61,3 +65,5 @@ function atualizaEstatistica(peca, operacao) {
     })
   }
 }
+
+
